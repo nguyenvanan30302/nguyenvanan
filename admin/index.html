@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Create New Item -->
+    <div class="mb-4">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addItemModal">Add New Item</button>
+    </div>
+
+    <!-- Items Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Sale (%)</th>
+                <th>Is Hot Product</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Example row 1 -->
+            <tr>
+                <td>1</td>
+                <td><img style="width: 100px;height: 100px" src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></td>
+                <td>Rolex Submariner</td>
+                <td>Rolex</td>
+                <td>Luxury</td>
+                <td>Luxury</td>
+                <td>$10,000</td>
+                <td>20</td>
+                <td>Yes</td>
+                <td>
+                    <button class="btn btn-success btn-sm">Edit</button>
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+            <!-- Example row 2 -->
+            <tr>
+                <td>2</td>
+                <td><img style="width: 100px;height: 100px" src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></td>
+                <td>Casio G-Shock</td>
+                <td>Casio</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>$120</td>
+                <td>0</td>
+                <td>No</td>
+                <td>
+                    <button class="btn btn-success btn-sm">Edit</button>
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- Add Item Modal -->
+<div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addItemModalLabel">Add New Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addItemForm">
+                    <div class="form-group">
+                        <label for="itemName">Name</label>
+                        <input type="text" class="form-control" id="itemName" required placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemImage">Image</label>
+                        <input type="file" class="form-control" id="itemImage" >
+                    </div>
+                    <div class="form-group">
+                        <label for="itemBrand">Brand</label>
+                        <input type="text" class="form-control" id="itemBrand" required placeholder="Enter brand">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemCategory">Category</label>
+                        <select class="form-control" id="itemCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemDescription">Brand</label>
+                        <textarea type="text" class="form-control" id="itemDescription" placeholder="Enter description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPrice">Price</label>
+                        <input type="number" class="form-control" id="itemPrice" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="itemSale">
+                        <label class="form-check-label" for="itemSale">On Sale</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="salePercentage">Sale Percentage</label>
+                        <input type="number" class="form-control" id="salePercentage" placeholder="Enter sale percentage" min="0" max="100">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="itemHotProduct">
+                        <label class="form-check-label" for="itemHotProduct">Hot Product</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

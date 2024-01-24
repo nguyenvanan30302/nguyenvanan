@@ -1,0 +1,139 @@
+
+
+div .main{
+    background-color: #f2f2f2;
+}
+.anh-nen1{
+    width: 1350px;
+    height: auto;
+    margin-left: -100px;
+
+}
+.anh-nen1 img{
+    width: 100%;
+    height: 580px;
+
+}
+
+.anh-nen2{
+    width: 750px;
+    margin-left: 200px;
+
+}
+
+.anh-nen2 img{
+    height: 500px;
+    margin-top: -600px;
+}
+
+.link-center{
+    background-color: #e2deda;
+    width: 1905px;
+    height: 50px;
+}
+
+
+ .back-link{
+     margin:10px auto 10px 380px;
+     font-size: 14px;
+     line-height: 1.25;
+ }
+
+ a.link-home{
+     margin-right: 15px;
+     color: #53534a;
+ }
+
+div #menu{
+    margin-top:-35px;
+    margin-right: 400px;
+}
+
+ span{
+     font-weight: bold;
+ }
+
+div #box-menu {
+    width: auto;
+    height: 50px;
+    background-color: #e2deda;
+}
+
+
+#menu ul {
+    background: #f2f2f2;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+#menu li {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    float: right;
+}}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+#menu a:hover {
+    background: #F1F1F1;
+    color: #333;
+}
+/*==Dropdown Menu==*/
+.sub-menu li {
+    display: none;
+}
+#menu li {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu li {
+    margin-left: 0 !important;
+}
+div .maunen{
+    background-color: #FFFFFF;
+
+}
+.button1{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #63635c;
+    transition: 0.3s;
+    border-radius: 2px 0px;
+}
+.button2{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #f2f2f2;
+    transition: 0.3s;
+    border-radius: 2px 0;
+}
+.img-watch{
+    transition: all 0.3s;
+    margin-top: 50px;
+}
+.img-watch:hover{
+    transform: scale(1.03,1.03);
+}
+.button1:hover{
+    background-color: #f2f2f2;
+}
+.button2:hover{
+    background-color: #985f0d;
+}

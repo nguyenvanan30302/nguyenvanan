@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tất cả nội dung chưas bên trong đều trong cục đó */
+}
+body{
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+
+}
+.menu{
+    width: auto;
+    height: 50px;
+    background-color: #e2deda;
+}

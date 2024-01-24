@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tất cả nội dung chưas bên trong đều trong cục đó */
+}
+body{
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+
+}
+.anh-sp{
+    width: 80px;
+    height: 80px;
+
+}
+.ten-sp{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.ma-sp{
+    font-size: 12px;
+    font-weight: 400;
+}
+.thong-tin-chi-tiet{
+    height: 30px;
+    background-color:#d9d4cd ;
+    text-decoration: none;
+}
+.thong-tin-chi-tiet a{
+    color: black;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+.mua-sp{
+    height: 30px;
+    margin-top: 10px;
+}
